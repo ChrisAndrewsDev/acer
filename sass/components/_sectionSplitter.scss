@@ -1,0 +1,45 @@
+@use '../abstracts' as *; 
+
+.test-splitter {
+    background-color: $sectionBreakBlue;
+    text-align: center;
+    color: $white;
+    padding: 4rem;
+    font-family: $fontPoppins;
+
+    .splitter-headings {
+     
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+// For some reason this was off-axis, had to add a margin-right to adjust >:(
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; // Not happy with this fix but it's centered
+    justify-content: space-evenly;
+    padding: 2rem;
+
+    p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .icon {
+
+        img {
+            max-height: 130px;
+        }
+    }
+}

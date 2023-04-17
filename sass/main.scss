@@ -1,0 +1,26 @@
+// Use directives
+@use './components/nav';
+@use './pages/hero';
+@use './pages/student';
+@use './components/sectionSplitter';
+@use './abstracts' as *; 
+
+
+
+// CSS reset
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Body styles
+body {
+    background-color: $white;
+    font-family: $fontRoboto;
+}
+
+// Utility styles
+a {
+    text-decoration: none;
+}

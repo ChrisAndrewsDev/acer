@@ -1,0 +1,33 @@
+@use '../abstracts' as *; 
+
+.reward-student-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 14%, rgba(0,0,0,0) 100%);
+    overflow: hidden;
+
+    .reward-content-wrapper {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    #reward-section-image {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+   
+
+   
+
+}

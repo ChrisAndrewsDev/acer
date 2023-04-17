@@ -1,0 +1,41 @@
+@use '../abstracts' as *; 
+
+.nav-container {
+   display: flex;
+   align-items: center;
+   padding: 2.063rem 0;
+   box-shadow: 1px 1px 7px gray;
+
+   .nav-logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 33vw;
+
+
+        .nav-logo-container--headings {
+            font-weight: 500;
+            margin-left: .75rem;
+        }
+   }
+
+   .nav-container-links {
+
+        ul {
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            margin-right: 1.1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $black;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
+   }
+}

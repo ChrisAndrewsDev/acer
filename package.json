@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sass": "^1.62.0"
+  },
+  "scripts": {
+    "watchsass": "sass --no-source-map --watch sass:css",
+    "buildsass": ""
+  }
+}
