@@ -1,21 +1,47 @@
 @use '../abstracts' as *; 
 
 .reward-student-container {
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 120vh;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 14%, rgba(0,0,0,0) 100%);
     overflow: hidden;
 
     .reward-content-wrapper {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        place-items: center;
+        min-height: 120vh;
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         position: relative;
-        height: 100%;
-        width: 100%;
+        padding: 0 10rem;
+
+        .reward-content--content {
+            max-width: 470px;
+            h2 {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 10px 0;
+            }
+
+            .reward-content-button {
+
+                a {
+                    background-color: $sectionBreakBlue;
+                    color: $white;
+                    padding: 5px 20px;
+                    display: inline-block;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+
+       
     }
 
     #reward-section-image {
@@ -23,6 +49,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        min-width: 100%;
         z-index: -2;
     }
 
