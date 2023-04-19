@@ -3,7 +3,7 @@
 .nav-container {
   display: flex;
   align-items: center;
-  padding: 2.063rem 0;
+  padding: 1.5rem 0;
   box-shadow: 1px 1px 7px gray;
 }
 .nav-container .nav-logo-container {
@@ -44,7 +44,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: bottom;
   z-index: -1;
 }
@@ -112,8 +112,163 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  min-width: 100vw;
   z-index: -2;
+}
+
+.challenge-section-container {
+  background-image: url("../../assets/sections/challenge-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  padding: 4rem;
+  min-height: 100vh;
+}
+.challenge-section-container .challenge-content-headers {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.challenge-section-container .challenge-content-headers h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.challenge-section-container .challenge-content-headers p {
+  max-width: 650px;
+}
+.challenge-section-container .challenge-icons-upper {
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 4rem 0;
+  max-width: 1400px;
+  margin: auto;
+}
+.challenge-section-container .challenge-icons-upper .challenge-icon {
+  max-width: 250px;
+}
+.challenge-section-container .challenge-line-break {
+  max-width: 90%;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin: auto;
+}
+.challenge-section-container .challenge-icons-lower {
+  padding: 4rem 0;
+}
+.challenge-section-container .challenge-icons-lower .challenge-icons-lower-headers {
+  text-align: center;
+  margin-right: 40px;
+}
+.challenge-section-container .challenge-icons-lower .challenge-icons-lower-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  max-width: 1400px;
+  margin: auto;
+}
+.challenge-section-container .challenge-icons-lower .challenge-icon-lower {
+  text-align: center;
+}
+.challenge-section-container .challenge-icons-lower .challenge-icon-lower img {
+  max-width: 65px;
+}
+
+.latest-section-wrapper {
+  padding: 4rem;
+}
+.latest-section-wrapper .latest-image-container {
+  max-width: 300px;
+  min-width: 300px;
+}
+.latest-section-wrapper .latest-image-container img {
+  width: 100%;
+}
+.latest-section-wrapper .latest-item {
+  max-width: 300px;
+  border-radius: 10px;
+  min-height: 22rem;
+  box-shadow: 2px 2px 5px #F5F5F5;
+}
+.latest-section-wrapper .latest-section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.latest-section-wrapper .latest-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+.latest-section-wrapper .latest-item-container .image-content {
+  padding: 1rem;
+}
+.latest-section-wrapper .latest-item-container .image-content .image-heading h5 {
+  margin-top: 0.55rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.latest-section-wrapper .latest-item-container .image-sub-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-section-wrapper .latest-item-container .image-sub-heading p {
+  font-size: 0.7rem;
+}
+.latest-section-wrapper .latest-item-container .image-sub-heading #pill {
+  background-color: #F5F5F5;
+  padding: 3px 4px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.contact-section-wrapper {
+  background-color: #F5F5F5;
+  padding: 3rem;
+}
+.contact-section-wrapper .contact-section-headers {
+  text-align: center;
+  padding: 2rem;
+}
+.contact-section-wrapper .contact-section-headers h2 {
+  font-weight: 500;
+}
+.contact-section-wrapper .contact-forms {
+  display: flex;
+  margin: auto;
+}
+.contact-section-wrapper .contact-forms .contact-form-left {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  gap: 0.5rem;
+}
+.contact-section-wrapper .contact-forms .contact-form-left .field input {
+  padding: 0.2rem;
+  padding-right: 6rem;
+  font-size: 1.3rem;
+}
+.contact-section-wrapper .contact-forms .contact-form-left .field:nth-child(1), .contact-section-wrapper .contact-forms .contact-form-left .field:nth-child(3) {
+  margin-right: 1rem;
+}
+.contact-section-wrapper .contact-forms .contact-form-left .contact-form-right-message p {
+  text-decoration: underline;
+}
+.contact-section-wrapper .contact-forms .contact-form-left .contact-form-right-message a {
+  background-color: #236477;
+  padding: 3px 7px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+.contact-section-wrapper .contact-forms .contact-form-right-message {
+  grid-column-start: 2;
 }
 
 .test-splitter {
@@ -147,6 +302,18 @@
   max-height: 130px;
 }
 
+footer {
+  background-color: #2F2F2F;
+  padding: 1rem;
+  color: #FFFFFF;
+}
+footer .footer-content {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -156,6 +323,7 @@
 body {
   background-color: #FFFFFF;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 a {

@@ -1,0 +1,72 @@
+@use '../abstracts' as *; 
+
+.challenge-section-container {
+    background-image: url('../../assets/sections/challenge-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 4rem;
+    min-height: 100vh;
+
+    .challenge-content-headers {
+       display: grid;
+       place-items: center;
+       text-align: center;
+
+       h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+       }
+        
+        p {
+           max-width: 650px;
+        }
+    }
+
+    .challenge-icons-upper {
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 4rem 0;
+        max-width: 1400px;
+        margin: auto;
+
+       .challenge-icon {
+        max-width: 250px;
+       }
+    }
+
+    .challenge-line-break {
+        max-width: 90%;
+        height: 2px;
+        background-color: $white;
+        margin: auto;
+    }
+
+    .challenge-icons-lower {
+        padding: 4rem 0;
+
+        .challenge-icons-lower-headers {
+            text-align: center;
+            margin-right: 40px;
+        }
+
+        .challenge-icons-lower-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .challenge-icon-lower {
+            text-align: center;
+
+            img {
+                max-width: 65px;
+            }
+        }
+    }
+}

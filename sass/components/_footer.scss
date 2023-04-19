@@ -1,0 +1,15 @@
+@use '../abstracts' as *; 
+
+footer {
+    background-color: $darkGrey;
+    padding: 1rem;
+    color: $white;
+    
+
+    .footer-content {
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
