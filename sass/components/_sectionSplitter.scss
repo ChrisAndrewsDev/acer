@@ -4,7 +4,7 @@
     background-color: $sectionBreakBlue;
     text-align: center;
     color: $white;
-    padding: 4rem;
+    padding: 5rem;
     font-family: $fontPoppins;
 
     .splitter-headings {
@@ -42,4 +42,18 @@
             max-height: 130px;
         }
     }
+}
+
+@media only screen and (max-width: 600px){
+   .icon-container {
+    flex-direction: column;
+    margin: 0;
+   
+    .icon {
+        margin-bottom: 20px;
+        img {
+            max-height: 100px;
+        }
+    }
+   }
 }

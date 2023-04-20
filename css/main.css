@@ -16,6 +16,9 @@
   font-weight: 500;
   margin-left: 0.75rem;
 }
+.nav-container .nav-logo-container .nav-logo-container--headings p {
+  line-height: 1;
+}
 .nav-container .nav-container-links ul {
   display: flex;
 }
@@ -27,12 +30,52 @@
   text-decoration: none;
   color: #000000;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 765px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    box-shadow: 1px 1px 7px gray;
+  }
+  .nav-container .nav-logo-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 33vw;
+  }
+  .nav-container .nav-logo-container .nav-logo-container--headings {
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .nav-container .nav-logo-container .nav-logo-container--headings p {
+    line-height: 1.1;
+  }
+  .nav-container .nav-container-links ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+  }
+  .nav-container .nav-container-links li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  .nav-container .nav-container-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+}
 .hero-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 120vh;
   width: 100vw;
   display: flex;
   justify-content: flex-start;
@@ -43,7 +86,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   object-fit: contain;
   object-position: bottom;
   z-index: -1;
@@ -68,11 +111,17 @@
   padding: 1.2rem 3rem;
   border-radius: 50px;
   color: #FFFFFF;
-  font-size: 1.125rem;
+  font-size: 1rem;
   display: inline-block;
   margin-top: 30px;
 }
 
+@media only screen and (max-width: 765px) {
+  .hero-content-wrapper {
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
 .reward-student-container {
   min-height: 120vh;
   background: rgb(255, 255, 255);
@@ -116,6 +165,13 @@
   z-index: -2;
 }
 
+@media only screen and (max-width: 765px) {
+  .reward-student-container .reward-content-wrapper {
+    padding: 0 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
 .challenge-section-container {
   background-image: url("../../assets/sections/challenge-image.png");
   background-repeat: no-repeat;
@@ -146,6 +202,17 @@
   max-width: 1400px;
   margin: auto;
 }
+.challenge-section-container .challenge-icons-upper h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.challenge-section-container .challenge-icons-upper p {
+  font-size: 1rem;
+}
+.challenge-section-container .challenge-icons-upper img {
+  margin-bottom: 10px;
+}
 .challenge-section-container .challenge-icons-upper .challenge-icon {
   max-width: 250px;
 }
@@ -162,6 +229,10 @@
   text-align: center;
   margin-right: 40px;
 }
+.challenge-section-container .challenge-icons-lower .challenge-icons-lower-headers h2 {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
 .challenge-section-container .challenge-icons-lower .challenge-icons-lower-container {
   display: flex;
   align-items: flex-end;
@@ -176,12 +247,47 @@
   max-width: 65px;
 }
 
+@media only screen and (max-width: 600px) {
+  .challenge-section-container .challenge-icons-upper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    max-width: 1400px;
+    margin: auto;
+    gap: 20px;
+  }
+  .challenge-section-container .challenge-icons-upper .challenge-icon {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  .challenge-section-container .challenge-icons-lower .challenge-icons-lower-headers {
+    text-align: center;
+    margin-right: 0;
+  }
+  .challenge-section-container .challenge-icons-lower .challenge-icons-lower-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .challenge-section-container .challenge-icons-lower .challenge-icons-lower-container .challenge-icon-lower {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .challenge-section-container .challenge-icons-lower .challenge-icons-lower-container .challenge-icon-lower img {
+    max-width: 65px;
+  }
+}
 .latest-section-wrapper {
   padding: 4rem;
 }
 .latest-section-wrapper .latest-image-container {
-  max-width: 300px;
-  min-width: 300px;
+  max-width: 275px;
+  min-width: 275px;
 }
 .latest-section-wrapper .latest-image-container img {
   width: 100%;
@@ -208,7 +314,7 @@
 }
 .latest-section-wrapper .latest-item-container .image-content .image-heading h5 {
   margin-top: 0.55rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .latest-section-wrapper .latest-item-container .image-sub-heading {
@@ -261,7 +367,7 @@
 }
 .contact-section-wrapper .contact-forms .contact-form-left .contact-form-right-message a {
   background-color: #236477;
-  padding: 3px 7px;
+  padding: 4px 8px;
   border-radius: 30px;
   color: #FFFFFF;
   display: inline-block;
@@ -270,12 +376,42 @@
 .contact-section-wrapper .contact-forms .contact-form-right-message {
   grid-column-start: 2;
 }
+@media only screen and (max-width: 765px) {
+  .contact-section-wrapper .contact-forms {
+    display: flex;
+    margin: auto;
+  }
+  .contact-section-wrapper .contact-forms .contact-form-left {
+    display: block;
+    max-width: 1200px;
+  }
+  .contact-section-wrapper .contact-forms .contact-form-left .field input {
+    padding: 0.2rem;
+    padding-right: 6rem;
+    font-size: 1.3rem;
+    margin-bottom: 7px;
+  }
+  .contact-section-wrapper .contact-forms .contact-form-left .contact-form-right-message p {
+    text-decoration: underline;
+  }
+  .contact-section-wrapper .contact-forms .contact-form-left .contact-form-right-message a {
+    background-color: #236477;
+    padding: 4px 8px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+  .contact-section-wrapper .contact-forms .contact-form-right-message {
+    grid-column-start: 2;
+  }
+}
 
 .test-splitter {
   background-color: #09257A;
   text-align: center;
   color: #FFFFFF;
-  padding: 4rem;
+  padding: 5rem;
   font-family: "Poppins", sans-serif;
 }
 .test-splitter .splitter-headings h2 {
@@ -302,6 +438,18 @@
   max-height: 130px;
 }
 
+@media only screen and (max-width: 600px) {
+  .icon-container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .icon-container .icon {
+    margin-bottom: 20px;
+  }
+  .icon-container .icon img {
+    max-height: 100px;
+  }
+}
 footer {
   background-color: #2F2F2F;
   padding: 1rem;
@@ -310,6 +458,7 @@ footer {
 footer .footer-content {
   max-width: 1300px;
   display: flex;
+  margin: auto;
   align-items: center;
   justify-content: space-between;
 }

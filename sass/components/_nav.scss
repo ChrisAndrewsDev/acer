@@ -16,6 +16,10 @@
         .nav-logo-container--headings {
             font-weight: 500;
             margin-left: .75rem;
+            
+            p {
+                line-height: 1;
+            }
         }
    }
 
@@ -35,7 +39,61 @@
             text-decoration: none;
             color: $black;
             font-weight: 400;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-family: $fontRoboto;
         }
    }
+}
+
+@media only screen and (max-width: 765px) {
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0;
+        box-shadow: 1px 1px 7px gray;
+     
+        .nav-logo-container {
+             display: flex;
+             flex-direction: column;
+             min-width: 33vw;
+     
+     
+             .nav-logo-container--headings {
+                 font-weight: 500;
+                 margin-bottom: 10px;
+                 text-align: center;
+                 
+                 p {
+                     line-height: 1.1;
+                 }
+             }
+        }
+     
+        .nav-container-links {
+     
+             ul {
+                 display: flex;
+                 flex-direction: column;
+                 text-align: center;
+                 margin-left: 20px;
+     
+             }
+     
+             li {
+                 list-style: none;
+                 margin-bottom: 10px;
+                 text-decoration: underline;
+                 
+             }
+     
+             a {
+                 text-decoration: none;
+                 color: $black;
+                 font-weight: 400;
+                 font-size: 1.1rem;
+             }
+        }
+     }
 }
